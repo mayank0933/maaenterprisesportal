@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order | Your Cuber - Maa Enterprises</title>
+    <meta name="description" content="Track the real-time progress of your service request on Your Cuber by Maa Enterprises using your Order ID and registered mobile number.">
+    <meta name="keywords" content="Track Order, Order Status, Your Cuber Tracking, Maa Enterprises, Application Status, Order ID">
+    <meta name="author" content="Maa Enterprises">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Track Your Order | Your Cuber - Maa Enterprises">
+    <meta property="og:description" content="Check the real-time status of your application with Your Cuber, Maa Enterprises, using your Order ID and mobile number.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og/track-order-placeholder.png">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body data-page="track-order">
+
+    <!-- ============================= -->
+    <!-- SKIP TO CONTENT (ACCESSIBILITY) -->
+    <!-- ============================= -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+    <header class="site-header" role="banner">
+        <div class="header-container">
+
+            <!-- Logo and Brand -->
+            <div class="brand">
+                <a href="index.html" class="brand-link" aria-label="Your Cuber Home">
+                    <img src="images/logo-placeholder.png" alt="Your Cuber Logo" class="brand-logo">
+                    <span class="brand-name" data-i18n="brand_name">Your Cuber</span>
+                </a>
+            </div>
+
+            <!-- Primary Navigation -->
+            <nav class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <ul class="nav-menu" id="primary-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="track-order.html" class="nav-link is-active" aria-current="page" data-i18n="nav_track_order">Track Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+
+                <!-- Language Switch Placeholder -->
+                <div class="lang-switch" role="group" aria-label="Language Switch">
+                    <button type="button" class="lang-btn is-active" data-lang-option="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang-option="hi" aria-pressed="false">हिं</button>
+                </div>
+
+                <!-- Dark Mode Toggle Placeholder -->
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="true" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-icon" aria-hidden="true">&#9789;</span>
+                </button>
+
+                <!-- Login Button -->
+                <a href="login.html" class="btn btn-login" data-i18n="nav_login">Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+    <main id="main-content" data-order-id="">
+
+        <!-- ============================= -->
+        <!-- BREADCRUMB -->
+        <!-- ============================= -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html" data-i18n="breadcrumb_home">Home</a>
+                </li>
+                <li class="breadcrumb-item is-current" aria-current="page" data-i18n="breadcrumb_track_order">
+                    Track Order
+                </li>
+            </ol>
+        </nav>
+
+        <!-- ============================= -->
+        <!-- TRACK ORDER HERO SECTION -->
+        <!-- ============================= -->
+        <section class="track-order-hero-section" aria-labelledby="track-order-hero-heading">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-eyebrow" data-i18n="track_order_hero_eyebrow">Order Tracking</p>
+                    <h1 id="track-order-hero-heading" class="hero-heading" data-i18n="track_order_hero_heading">
+                        Track Your Order
+                    </h1>
+                    <p class="hero-description" data-i18n="track_order_hero_description">
+                        Enter your Order ID and registered mobile number below to check the real-time
+                        progress of your service request with Maa Enterprises.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- ORDER TRACKING FORM SECTION -->
+        <!-- ============================= -->
+        <section class="track-order-form-section" aria-labelledby="track-order-form-heading">
+            <div class="section-container track-order-form-container">
+
+                <div class="section-heading-group">
+                    <p class="section-eyebrow" data-i18n="track_order_form_eyebrow">Enter Your Details</p>
+                    <h2 id="track-order-form-heading" class="section-heading" data-i18n="track_order_form_heading">Check Your Order Status</h2>
+                    <p class="section-subheading" data-i18n="track_order_form_subheading">
+                        Use the Order ID and mobile number provided at the time of your application.
+                    </p>
+                </div>
+
+                <form class="track-order-form" action="#" method="post" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="track-order-id" class="form-label" data-i18n="track_order_id_label">
+                                Order ID <span class="form-required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="track-order-id"
+                                name="order_id"
+                                class="form-input"
+                                placeholder="e.g. YC-2026-000123"
+                                data-i18n-placeholder="track_order_id_placeholder"
+                                autocomplete="off"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="track-mobile-number" class="form-label" data-i18n="track_mobile_label">
+                                Registered Mobile Number <span class="form-required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                type="tel"
+                                id="track-mobile-number"
+                                name="mobile_number"
+                                class="form-input"
+                                placeholder="Enter your registered mobile number"
+                                data-i18n-placeholder="track_mobile_placeholder"
+                                autocomplete="tel"
+                                pattern="[0-9]{10}"
+                                inputmode="numeric"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-actions track-order-form-actions">
+                        <button type="submit" class="btn btn-primary form-submit-btn" data-i18n="track_order_submit">
+                            Track Order
+                        </button>
+                        <button type="reset" class="btn btn-outline form-clear-btn" data-i18n="track_order_clear">
+                            Clear Form
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- ORDER STATUS RESULT SECTION (PLACEHOLDER) -->
+        <!-- ============================= -->
+        <section class="order-status-section" aria-labelledby="order-status-heading" data-dynamic="order-status-section" hidden>
+            <div class="section-container">
+                <div class="section-heading-group">
+                    <p class="section-eyebrow" data-i18n="order_status_eyebrow">Order Status</p>
+                    <h2 id="order-status-heading" class="section-heading" data-i18n="order_status_heading">Your Order Details</h2>
+                </div>
+
+                <article class="order-status-card">
+                    <dl class="order-status-details">
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_order_id_label">Order ID</dt>
+                            <dd data-dynamic="order-id">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_customer_name_label">Customer Name</dt>
+                            <dd data-dynamic="customer-name">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_service_label">Selected Service</dt>
+                            <dd data-dynamic="selected-service">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_submission_date_label">Submission Date</dt>
+                            <dd data-dynamic="submission-date">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_current_status_label">Current Status</dt>
+                            <dd data-dynamic="current-status" class="order-status-badge">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_payment_status_label">Payment Status</dt>
+                            <dd data-dynamic="payment-status" class="order-status-badge">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_estimated_completion_label">Estimated Completion Time</dt>
+                            <dd data-dynamic="estimated-completion">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_assigned_executive_label">Assigned Executive</dt>
+                            <dd data-dynamic="assigned-executive">--</dd>
+                        </div>
+                        <div class="order-status-item">
+                            <dt data-i18n="order_status_last_updated_label">Last Updated</dt>
+                            <dd data-dynamic="last-updated">--</dd>
+                        </div>
+                    </dl>
+                </article>
+
+                <!-- ============================= -->
+                <!-- PROGRESS TIMELINE -->
+                <!-- ============================= -->
+                <div class="order-progress-timeline-wrapper">
+                    <h3 class="order-progress-heading" data-i18n="order_progress_heading">Order Progress</h3>
+
+                    <ol class="order-progress-timeline" data-dynamic="order-progress-timeline">
+                        <li class="progress-step" data-step="request-submitted" data-status="pending">
+                            <span class="progress-step-marker" aria-hidden="true"></span>
+                            <span class="progress-step-label" data-i18n="progress_step_submitted">Request Submitted</span>
+                            <span class="progress-step-date" data-dynamic="step-submitted-date">--</span>
+                        </li>
+                        <li class="progress-step" data-step="documents-verified" data-status="pending">
+                            <span class="progress-step-marker" aria-hidden="true"></span>
+                            <span class="progress-step-label" data-i18n="progress_step_verified">Documents Verified</span>
+                            <span class="progress-step-date" data-dynamic="step-verified-date">--</span>
+                        </li>
+                        <li class="progress-step" data-step="payment-confirmed" data-status="pending">
+                            <span class="progress-step-marker" aria-hidden="true"></span>
+                            <span class="progress-step-label" data-i18n="progress_step_payment">Payment Confirmed</span>
+                            <span class="progress-step-date" data-dynamic="step-payment-date">--</span>
+                        </li>
+                        <li class="progress-step" data-step="processing" data-status="pending">
+                            <span class="progress-step-marker" aria-hidden="true"></span>
+                            <span class="progress-step-label" data-i18n="progress_step_processing">Processing</span>
+                            <span class="progress-step-date" data-dynamic="step-processing-date">--</span>
+                        </li>
+                        <li class="progress-step" data-step="completed" data-status="pending">
+                            <span class="progress-step-marker" aria-hidden="true"></span>
+                            <span class="progress-step-label" data-i18n="progress_step_completed">Completed</span>
+                            <span class="progress-step-date" data-dynamic="step-completed-date">--</span>
+                        </li>
+                        <li class="progress-step" data-step="delivered" data-status="pending">
+                            <span class="progress-step-marker" aria-hidden="true"></span>
+                            <span class="progress-step-label" data-i18n="progress_step_delivered">Delivered</span>
+                            <span class="progress-step-date" data-dynamic="step-delivered-date">--</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- NEED HELP SECTION -->
+        <!-- ============================= -->
+        <section class="contact-cta-section" aria-labelledby="track-order-help-heading">
+            <div class="section-container contact-cta-container">
+                <div class="contact-cta-content">
+                    <h2 id="track-order-help-heading" class="contact-cta-heading" data-i18n="track_order_help_heading">
+                        Need Help With Your Order?
+                    </h2>
+                    <p class="contact-cta-description" data-i18n="track_order_help_description">
+                        If you're unable to find your order status, our support team is ready to assist
+                        you over WhatsApp, phone, or through our Contact page.
+                    </p>
+                </div>
+
+                <div class="contact-cta-actions">
+                    <!-- WhatsApp Placeholder -->
+                    <a href="https://wa.me/910000000000" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+                        <img src="images/icons/icon-whatsapp-placeholder.png" alt="" class="btn-icon">
+                        <span data-i18n="contact_cta_whatsapp">Chat on WhatsApp</span>
+                    </a>
+
+                    <!-- Call Button Placeholder -->
+                    <a href="tel:+910000000000" class="btn btn-call" aria-label="Call Maa Enterprises">
+                        <img src="images/icons/icon-call-placeholder.png" alt="" class="btn-icon">
+                        <span data-i18n="contact_cta_call">Call Us Now</span>
+                    </a>
+
+                    <!-- Contact Support Button -->
+                    <a href="contact.html" class="btn btn-outline" data-i18n="track_order_contact_support">
+                        Contact Support
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- IMPORTANT NOTES SECTION -->
+        <!-- ============================= -->
+        <section class="important-notes-section" aria-labelledby="important-notes-heading">
+            <div class="section-container">
+                <div class="section-heading-group">
+                    <p class="section-eyebrow" data-i18n="important_notes_eyebrow">Please Note</p>
+                    <h2 id="important-notes-heading" class="section-heading" data-i18n="important_notes_heading">Important Notes</h2>
+                </div>
+
+                <ul class="important-notes-list">
+                    <li class="important-notes-item" data-i18n="important_note1">
+                        Keep your Order ID safe, as it is required every time you wish to check your
+                        application status.
+                    </li>
+                    <li class="important-notes-item" data-i18n="important_note2">
+                        Always use the same mobile number that was registered at the time of your
+                        application for accurate tracking results.
+                    </li>
+                    <li class="important-notes-item" data-i18n="important_note3">
+                        If your tracking information is unavailable or appears incorrect, please contact
+                        our support team for immediate assistance.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- FAQ PREVIEW SECTION -->
+        <!-- ============================= -->
+        <section class="faq-preview-section" aria-labelledby="track-order-faq-heading">
+            <div class="section-container">
+                <div class="section-heading-group">
+                    <p class="section-eyebrow" data-i18n="faq_eyebrow">Need Help</p>
+                    <h2 id="track-order-faq-heading" class="section-heading" data-i18n="track_order_faq_heading">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-preview-list">
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="track_faq1_question">Can I track my request online?</summary>
+                        <p class="faq-answer" data-i18n="track_faq1_answer">
+                            Yes, you can track your order anytime using this page by entering your Order ID
+                            and registered mobile number.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="track_faq2_question">Where do I find my Order ID?</summary>
+                        <p class="faq-answer" data-i18n="track_faq2_answer">
+                            Your Order ID is shared with you immediately after submitting your application,
+                            both on-screen and via WhatsApp or email.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="track_faq3_question">What if my order status shows no results?</summary>
+                        <p class="faq-answer" data-i18n="track_faq3_answer">
+                            Please double-check your Order ID and mobile number for typos. If the issue
+                            continues, reach out to our support team for help.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="track_faq4_question">How often is the order status updated?</summary>
+                        <p class="faq-answer" data-i18n="track_faq4_answer">
+                            Your order status is updated at every key stage of processing, from
+                            verification through to final delivery.
+                        </p>
+                    </details>
+                </div>
+
+                <div class="faq-preview-cta">
+                    <a href="faq.html" class="btn btn-outline" data-i18n="faq_view_all">View All FAQs</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+
+            <!-- Business Information -->
+            <div class="footer-column footer-brand">
+                <div class="footer-brand-header">
+                    <img src="images/logo-placeholder.png" alt="Your Cuber Logo" class="footer-logo">
+                    <span class="footer-brand-name" data-i18n="brand_name">Your Cuber</span>
+                </div>
+                <p class="footer-business-info" data-i18n="footer_business_info">
+                    Your Cuber is a digital service portal operated and managed by Maa Enterprises.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3 class="footer-heading" data-i18n="footer_quick_links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="track-order.html" data-i18n="nav_track_order">Track Order</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Links -->
+            <div class="footer-column">
+                <h3 class="footer-heading" data-i18n="footer_legal">Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="privacy-policy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html" data-i18n="footer_terms">Terms &amp; Conditions</a></li>
+                    <li><a href="refund-policy.html" data-i18n="footer_refund">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-column">
+                <h3 class="footer-heading" data-i18n="footer_contact">Contact</h3>
+                <address class="footer-address">
+                    <p class="footer-contact-item" data-i18n="footer_address">
+                        Maa Enterprises, Local Market Complex, Your City, India
+                    </p>
+                    <p class="footer-contact-item">
+                        <a href="tel:+910000000000">+91 00000 00000</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <a href="mailto:support@yourcuber.in">support@yourcuber.in</a>
+                    </p>
+                </address>
+
+                <!-- Social Placeholders -->
+                <ul class="footer-social" aria-label="Social Media Links">
+                    <li>
+                        <a href="#" aria-label="Facebook" class="footer-social-link">
+                            <img src="images/icons/icon-facebook-placeholder.png" alt="" class="footer-social-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Instagram" class="footer-social-link">
+                            <img src="images/icons/icon-instagram-placeholder.png" alt="" class="footer-social-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="YouTube" class="footer-social-link">
+                            <img src="images/icons/icon-youtube-placeholder.png" alt="" class="footer-social-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="footer-disclaimer">
+            <p data-i18n="footer_disclaimer">
+                Disclaimer: Your Cuber and Maa Enterprises act as a facilitation and assistance platform only.
+                Government-related services are processed through the respective official government systems
+                wherever applicable, and we are not affiliated with any government body unless explicitly stated.
+            </p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p class="footer-copyright" data-i18n="footer_copyright">
+                &copy; 2026 Maa Enterprises. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <!-- js/app.js is expected to handle form submission, query Firebase -->
+    <!-- (or another backend) using the Order ID and mobile number, then -->
+    <!-- populate every element marked with a data-dynamic attribute and -->
+    <!-- reveal the order-status-section once results are available. -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>
